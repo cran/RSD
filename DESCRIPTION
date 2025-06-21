@@ -1,7 +1,7 @@
 Package: RSD
 Type: Package
-Title: Compares Random Prospects using Stochastic Dominance
-Version: 0.1.0
+Title: Compares Random Distributions using Stochastic Dominance
+Version: 0.2.0
 Authors@R: c(person(given = "Shayan",
                       family = "Tohidi",
                       role = c("aut", "cre"),
@@ -23,13 +23,15 @@ Description: The Stochastic Dominance (SD) is the classical way of comparing two
     <doi:10.1287/mnsc.1120.1616>.
 License: GPL (>= 3)
 Encoding: UTF-8
+LazyData: true
 URL: https://github.com/ShayanTohidi/RSD
 BugReports: https://github.com/ShayanTohidi/RSD/issues
 RoxygenNote: 7.3.2
 Imports: dplyr, tidyr, ggplot2, magrittr, methods
+Depends: R (>= 3.5)
 NeedsCompilation: no
-Packaged: 2025-06-14 01:19:24 UTC; shayantohidi
+Packaged: 2025-06-21 03:24:44 UTC; shayantohidi
 Author: Shayan Tohidi [aut, cre],
   Sigurdur Olafsson [aut]
 Repository: CRAN
-Date/Publication: 2025-06-17 06:10:06 UTC
+Date/Publication: 2025-06-21 14:30:02 UTC

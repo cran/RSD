@@ -7,6 +7,12 @@
 #' The `type` argument must be one of the 'll' or 'ths', otherwise it will raise
 #' an error.
 #'
+#' The `epsilon` and `winner` output parameters are the ones that should be
+#' taken most. The others are the calculation details and are provided for
+#' further investigation. A lower the `epsilon`, lower the violation ratio
+#' of the dominant distribution, lower the eliminated extreme utilities, higher
+#' the number of decision-makers who agree on the dominant distribution.
+#'
 #' @seealso [assd.ll.test(), assd.ths.test] for more details.
 #'
 #' @importFrom methods is

@@ -30,6 +30,10 @@ the values show the area between the CDFs correspond to each segment.
 amount of area where the `area` vector is positive, meaning the `cdf1` is
 larger than `cdf2` and `ssd1` is larger than `ssd2`. `negative.area` is like
 `positive.area` for negative values.
+
+If neither distribution dominates the other by ASSD-LL, the `winner` output will
+be zero, and it happens only when the distribution with a higher expected
+value has the `epsilon` which is larger than 0.5.
 }
 \seealso{
 [expected.values(), pos.neg.area.assd.ll(), afsd.test()] for more

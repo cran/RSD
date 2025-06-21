@@ -25,6 +25,16 @@ the values show the area between the CDFs correspond to each segment.
 amount of area where the `area` vector is positive, meaning the `cdf1` is
 larger than `cdf2`. `negative.area` is like `positive.area` for negative
 values.
+
+If neither distribution dominates the other by AFSD, the `winner` output will
+be zero, and it happens only when the expected value of distributions are
+equal.
+
+The `epsilon` and `winner` output parameters are the ones that should be
+taken most. The others are the calculation details and are provided for
+further investigation. A lower the `epsilon`, lower the violation ratio
+of the dominant distribution, lower the eliminated extreme utilities, higher
+the number of decision-makers who agree on the dominant distribution.
 }
 \examples{
 sd = createStochasticDominance(outcome1 = c(1,4,7),

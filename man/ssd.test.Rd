@@ -16,11 +16,12 @@ A number. Indicating dominant prospect index.
 It compares two random prospects by the second-order stochastic dominance (SSD).
 }
 \details{
-If neither prospect dominates the other, it returns 0.
-
- A prospect dominates when its SSD is below the other one. It means that all
+A prospect dominates when its SSD is below the other one. It means that all
  element of the SSD vector must be equal or smaller, and at least one element
  should be smaller for the dominant prospect.
+
+If neither prospect dominates the other by SSD, it returns 0. It means the
+SSDs intersect each other.
 }
 \examples{
 sd = createStochasticDominance(outcome1 = c(1,4,7),

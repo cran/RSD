@@ -30,6 +30,10 @@ the values show the area between the SSDs correspond to each segment.
 amount of area where the `area` vector is positive, meaning the `ssd1` is
 larger than `ssds2`. `negative.area` is like `positive.area` for negative
 values.
+
+If neither distribution dominates the other by ASSD-THS, the `winner` output will
+be zero, and it happens only when the distribution with a higher expected
+value has the `epsilon` which is larger than 0.5.
 }
 \seealso{
 [expected.values(), area.btwn.ssd.calc()] for more details.
